@@ -6,9 +6,11 @@ cd `dirname $0`
 rm -rf _build/
 mkdir _build
 
+export AFL_INST_RATIO=0
+
 
 OCAMLC='ocamlc -g -bin-annot'
-OCAMLOPT='ocamlopt -g -bin-annot -afl-inst-ratio 0'
+OCAMLOPT='ocamlopt -g -bin-annot'
 
 cd _build
 
